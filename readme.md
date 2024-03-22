@@ -1,14 +1,10 @@
 # Friendly DCS LSO
 
-![Main Image Placeholder](images/Example _OK_.png)
-
 Friendly DCS LSO is a simple PowerShell Core script that helps you convert LSO landing grades into a more friendly, easier-to-understand mode.
 
 ## Why Use It
 
 LSO landing grades contain valuable information to improve your carrier landings. This is especially true at the beginning of your DCS pilot career. However, after a hasty carrier landing, you might not be at your best trying to understand LSO grades. This script provides an easy way to understand LSO grades.
-
-![LSO Grades Placeholder](path/to/LSO-grades-image.png)
 
 ## How to Use It
 
@@ -17,14 +13,15 @@ LSO landing grades contain valuable information to improve your carrier landings
     ```powershell
     .\Monitor-LandingGrades.ps1
     ```
-3. Start DCS and fly your mission.
-4. Once done flying, save the debriefing log to the `%UserProfile%\Saved Games\DCS\Missions` folder.
+3. Start DCS and fly your mission. ![Script Output Placeholder](images/Start_DCS_Mission.png)
+4. Once done flying, save the debriefing log to the `%UserProfile%\Saved Games\DCS\Missions` folder. ![Script Output Placeholder](images/Save_debriefing.png)
+Remeber to save to folder that is monitored by `Monitor-LandingGrades.ps1` script
+![Script Output Placeholder](images/Save_to_monitored_folder.png)
+> **Note!** If you prefer, you can set the script to monitor a different folder than `%UserProfile%\Saved Games\DCS\Missions`. In this case, also store your debriefing logs in to that folder.
 5. The script automatically monitors your DCS `%UserProfile%\Saved Games\DCS\Missions` folder and parses all LSO landing grades from new log files.
-6. Read Friendly LSO Gradings from the `pwsh.exe` window.
+6. Read Friendly LSO Gradings from the `pwsh.exe` window. ![Script Output Placeholder](images/Read_Friendly_LSO.png)
 
-![Script Output Placeholder](path/to/script-output-image.png)
 
-> **Note!** If you prefer, you can set the script to monitor a different folder than `%UserProfile%\Saved Games\DCS\Missions`. In this case, also store your debriefing logs in the same folder.
 
 ## Alternative Ways of Using
 
